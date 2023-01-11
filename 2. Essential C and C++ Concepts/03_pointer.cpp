@@ -10,7 +10,15 @@ using namespace std;
 
 int main () {
 
-    
+    int a = 10; // Data variable
+
+    int *p; // Address variable
+
+    p = &a; // Initiialization of a pointer variable
+
+    printf("%d\n", a);
+
+    printf("%d", *p);   // Deference (*) to print the value of a
 
     return 0;
 }
