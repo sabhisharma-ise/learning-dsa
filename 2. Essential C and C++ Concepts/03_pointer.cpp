@@ -1,4 +1,3 @@
-// Normal variables are Data variables
 // Pointers are Address variable, as they store address of another variable
 // Why use Pointers?
 // To access the Heap memory
@@ -22,3 +21,6 @@ int main () {
 
     return 0;
 }
+
+// Size of pointer variable is same for every data type. 
+// It would be 8 bytes for 64-bit processor, 4 bytes for 32-bit processor, 2 bytes for 16-bit processor.

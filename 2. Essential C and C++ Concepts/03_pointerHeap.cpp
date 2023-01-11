@@ -15,7 +15,7 @@ int main () {
     // In C
     p = (int *)malloc(5 * sizeof(int)); // We have type-casted to integer type becuase the first value of malloc will return void pointer
     
-    // In C++
+    // In C++, it's very easy!
     p = new int[5];
 
     return 0;

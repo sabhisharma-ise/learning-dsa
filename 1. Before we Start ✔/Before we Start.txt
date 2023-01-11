@@ -1,0 +1,4 @@
+# Learning DSA in C/C++
+- This course is covering around 45 hours
+- Covers most of the data structures and algorithms
+- Requires Dedication and Hard Work!
