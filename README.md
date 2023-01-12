@@ -2,4 +2,4 @@
 - [ ] Essential C and C++ Concepts
 - Day 1 - Array Basics, Structures
 - Day 2 - Pointers, Pointer to Structure, Reference in C++, Function
-- Day 3 - 
+- Day 3 - Parameter Passing, Array as a Parameter, Structure as a Parameter
