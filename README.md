@@ -6,4 +6,4 @@
 - [X] **Introduction**
 - Day 4 - Stack & heap memory, Physical vs logical data structures, Abstract data types
 - [ ] **Linked List**
-- Day 5 - Creating a node, Display linked list (+ reverse display), Counting nodes in linked list, Sum of all elements, Maximum element in the linked list (Iterative + Recursive approach)
+- Day 5 - Creating a node, Display linked list, Reverse display using recursion, Counting nodes in linked list, Sum of all elements, Maximum element in the linked list, Searching in a linked list (Iterative + Recursive approach)
