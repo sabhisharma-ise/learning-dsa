@@ -6,4 +6,4 @@
 - [X] Introduction
 - Day 4 - Stack & heap memory, Physical vs logical data structures, Abstract data types
 - [ ] Linked List
-- Day 5 - 
+- Day 5 - Creating a node, Display linked list, Recursive display (+ reverse display)
