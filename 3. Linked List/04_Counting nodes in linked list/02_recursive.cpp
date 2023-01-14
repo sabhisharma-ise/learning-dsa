@@ -24,7 +24,7 @@ int main () {
     struct Node *first;
     first = new Node;
 
-    countNode(first);
+    printf("%d ", countNode(first));
 
     return 0;
 }
