@@ -7,4 +7,5 @@
 - Day 4 - ```Stack & heap memory, Physical vs logical data structures, Abstract data types```
 - [ ] **Linked List**
 - Day 5 - ```Creating a node, Display linked list, Reverse display using recursion, Counting nodes in linked list, Sum of all elements, Maximum element in the linked list, Searching in a linked list (Iterative + Recursive approach)```
-- Day 6 - ```Insertion in a linked list, Create a linked list using insert(), Inserting in a sorted linked list, ```
+- Day 6 - ```Insertion in a linked list, Create a linked list using insert```
+- Day 7 - ```Inserting in a sorted linked list, Deleting from a linked list```
