@@ -1,4 +1,4 @@
-# Learning-DSA [Started on 01-10-2023]
+# Learning-DSA [Started on 10<sup>th</sup> January 2023]
 - [X] **Essential C and C++ Concepts**
 - Day 1 - ```Array basics, Structures```
 - Day 2 - ```Pointers, Pointer to structure, Reference in C++, Function```
