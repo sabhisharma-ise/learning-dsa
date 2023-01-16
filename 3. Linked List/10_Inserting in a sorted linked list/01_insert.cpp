@@ -8,6 +8,25 @@ struct Node {
     struct Node *next;
 } *first = new Node;
 
+void create(int a[], int n) {
+
+    struct Node *t, *last;
+    first = new Node;
+    first->data = a[0];
+    first->next = NULL;
+    last = first;
+
+    for (int i = 1; i < n; i++) {
+
+        t = new Node;
+        t->data = a[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+        
+    }
+}
+
 void display (struct Node *p) {
     while(p) {
         printf("%d ", p->data);
@@ -15,6 +34,7 @@ void display (struct Node *p) {
     }
 }
 
+// Function to insert in a sorted linked list
 void insert_sorted (struct Node *p, int x) {
     struct Node *t, *q = NULL;
     t = new Node;
@@ -48,10 +68,12 @@ void insert_sorted (struct Node *p, int x) {
 
 int main () {
 
-    insert_sorted(first, 10);
+    int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
+    create(a, 8);
+
+    insert_sorted(first, 12);
 
     display(first);
-
 
     return 0;
 }

@@ -11,6 +11,33 @@ struct Node {
     struct Node *next;
 } *first = NULL;
 
+void create(int a[], int n) {
+
+    struct Node *t, *last;
+    first = new Node;
+    first->data = a[0];
+    first->next = NULL;
+    last = first;
+
+    for (int i = 1; i < n; i++) {
+
+        t = new Node;
+        t->data = a[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+        
+    }
+}
+
+void display (struct Node *p) {
+    while(p) {
+        printf("%d ", p->data);
+        p = p->next;
+    }
+}
+
+// Function to delete the last node of a linked list
 void delete_lastNode () {
 
     struct Node *p = first;
@@ -29,7 +56,12 @@ void delete_lastNode () {
 
 int main () {
 
-    
+    int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
+    create(a, 8);
+
+    delete_lastNode();
+
+    diaplay(first);
 
 
     return 0;

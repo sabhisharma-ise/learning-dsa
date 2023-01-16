@@ -8,7 +8,33 @@ struct Node {
     struct Node *next;
 } * first = NULL;   // Initialize *first gloablly
 
-void insert_pos (int pos, int x);
+void create(int a[], int n) {
+
+    struct Node *t, *last;
+    first = new Node;
+    first->data = a[0];
+    first->next = NULL;
+    last = first;
+
+    for (int i = 1; i < n; i++) {
+
+        t = new Node;
+        t->data = a[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+        
+    }
+}
+
+void display (struct Node *p) {
+    while (p != NULL) {
+        cout << p->data << " ";
+        p = p->next;
+    }
+}
+
+void insert_pos (int pos, int x)
 {
     struct Node *t, *p; // Require two pointers in this case
     t = new Node;   // Create a new node
@@ -18,7 +44,7 @@ void insert_pos (int pos, int x);
         p = p->next;
     }
     if (p != NULL) {
-        t->next =  p->next  // Make the new node point to p's next
+        t->next =  p->next;  // Make the new node point to p's next
         p->next = t;    // Make the p's next point to new node
     }
 
@@ -26,9 +52,14 @@ void insert_pos (int pos, int x);
 
 int main () {
 
-    int pos = 4;
-    int x = 10;
-    insert_pos(pos, x);
-    // display(first);
+    int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
+    create(a, 8);
 
+    int pos = 4;
+    int x = 15;
+
+    insert_pos(pos, x);
+    display(first);
+
+    return 0;
 }

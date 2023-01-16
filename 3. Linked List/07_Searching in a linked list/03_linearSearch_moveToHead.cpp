@@ -11,6 +11,25 @@ struct Node {
     struct Node *next;
 } *first = NULL;    // Initializing first pointer, to use in functions
 
+void create(int a[], int n) {
+
+    struct Node *t, *last;
+    first = new Node;
+    first->data = a[0];
+    first->next = NULL;
+    last = first;
+
+    for (int i = 1; i < n; i++) {
+
+        t = new Node;
+        t->data = a[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+        
+    }
+}
+
 // Improved linear search implementation using move-to-head technique
 struct Node * search (struct Node *p, int key) {
     struct Node *q = NULL;
@@ -27,6 +46,9 @@ struct Node * search (struct Node *p, int key) {
 }
 
 int main () {
+
+    int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
+    create(a, 8);
 
     struct Node *res;
     res = search(first, 12);

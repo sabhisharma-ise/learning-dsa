@@ -7,7 +7,26 @@ using namespace std;
 struct Node {
     int data;
     struct Node *next;
-};
+} *first = NULL;
+
+void create(int a[], int n) {
+
+    struct Node *t, *last;
+    first = new Node;
+    first->data = a[0];
+    first->next = NULL;
+    last = first;
+
+    for (int i = 1; i < n; i++) {
+
+        t = new Node;
+        t->data = a[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+        
+    }
+}
 
 // Function to count the number of nodes in a linked list
 int countNode (struct Node *p) {
@@ -16,14 +35,16 @@ int countNode (struct Node *p) {
         count++;
         p=p->next;
     }
+    return count;
 }
 
 int main () {
 
-    struct Node *first;
-    first = new Node;
+    int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
+    create(a, 8);
 
-    printf("%d ", countNode(first));
+    int count = countNode(first);
+    printf("%d", count);
 
     return 0;
 }
