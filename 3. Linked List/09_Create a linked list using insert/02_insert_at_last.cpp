@@ -10,6 +10,26 @@ struct Node {
     struct Node * next;
 } * first = NULL;
 
+void create(int a[], int n) {
+
+    struct Node *t, *last;
+    first = new Node;
+    first->data = a[0];
+    first->next = NULL;
+    last = first;
+
+    for (int i = 1; i < n; i++) {
+
+        t = new Node;
+        t->data = a[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+        
+    }
+}
+
+
 void display(struct Node *p) {
     while (p) {
         printf("%d ", p->data);
@@ -37,13 +57,21 @@ void insert_end (struct Node *last, int x)
 
 int main () {
 
-    // Not sure if this is the way it's done!
+    int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
+    create(a, 8);
+
     struct Node *last = NULL;
-    while (last) {
+
+    last = first;
+
+    // condition here is important to check 
+    while (last->next != NULL) {
         last = last->next;
     }
 
     insert_end(last, 10);
+
+    display(first);
 
     return 0;
 }
