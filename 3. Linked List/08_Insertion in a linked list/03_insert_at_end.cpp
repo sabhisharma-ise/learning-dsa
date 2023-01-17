@@ -44,7 +44,8 @@ void insert_end (int x)
         first = t;
     } else {
         p = first;
-        while (p != NULL) {
+        // this condition here is imp
+        while (p->next != NULL) {
             p = p->next;
         }
         // t->next = NULL; Make the new node point to NULL
