@@ -9,4 +9,4 @@
 - Day 5 - ```Creating a node, Display linked list, Reverse display using recursion, Counting nodes in linked list, Sum of all elements, Maximum element in the linked list, Searching in a linked list (Iterative + Recursive approach)```
 - Day 6 - ```Insertion in a linked list, Create a linked list using insert```
 - Day 7 - ```Inserting in a sorted linked list, Deleting from a linked list```
-- Day 8 - ```
+- Day 8 - ```Checking if a linked list is sorted, Remove duplicates from a sorted linked list```
