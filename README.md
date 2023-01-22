@@ -11,4 +11,4 @@
 - Day 7 - ```Inserting in a sorted linked list, Deleting from a linked list```
 - Day 8 - ```Checking if a linked list is sorted, Remove duplicates from a sorted linked list```
 - Day 9, 10, 11 - ```NA```
-- Day 12 - ```Reversing a linked list - using array (reversing elements), using sliding pointers (reversing links) using recursion, Concatenation of 2 linked list, Merging of 2 sorted linked list, Check for Loop in a linked list```
+- Day 12 - ```Reversing a linked list - using array (reversing elements), using sliding pointers (reversing links), using recursion, Concatenation of 2 linked list, Merging of 2 sorted linked list, Check for Loop in a linked list```
