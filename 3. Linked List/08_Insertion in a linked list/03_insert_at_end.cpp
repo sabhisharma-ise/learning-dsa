@@ -48,7 +48,7 @@ void insert_end (int x)
         while (p->next != NULL) {
             p = p->next;
         }
-        // t->next = NULL; Make the new node point to NULL
+        t->next = NULL; //Make the new node point to NULL
         p->next = t; // Make p's next point to new node
     }
 }

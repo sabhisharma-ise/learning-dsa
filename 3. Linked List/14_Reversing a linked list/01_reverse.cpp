@@ -1,7 +1,5 @@
-// Deleting the last node of a given linked list
-// We need 2 extra pointers (say p and q)
-// Pointer 'q' to point at the previous node of last node
-// Pointer 'p' to point to the last node
+// Reversing the Elements
+// Reversing a linked list using an extra array
 
 #include <iostream>
 using namespace std;
@@ -37,21 +35,30 @@ void display (struct Node *p) {
     }
 }
 
-// Function to delete the last node of a linked list
-void delete_lastNode () {
-
-    struct Node *p = first;
-    struct Node *q = NULL;
-
-    while (p->next != NULL) {
-        q = p;
+int count (struct Node *p) {
+    int c = 0;
+    while (p) {
+        c++;
         p = p->next;
     }
+    return c;
+}
 
-    q->next = NULL;
-    int x = p->data;
-    delete p;
+// Function to reverse the linked list using an array
+void reverse (struct Node *p) {
+    p = first;
+    int n = count(first);
+    int A[n];   // Create an extra array of size of linked list
+    for (int i = 0; i < n && p != NULL; i++) {
+        A[i] = p->data;
+        p = p->next;
+    }
+    p = first;  // set p to first again
 
+    for (int i = n - 1; i >= 0; i--) {
+        p->data = A[i];
+        p = p->next;
+    }
 }
 
 int main () {
@@ -59,10 +66,9 @@ int main () {
     int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
     create(a, 8);
 
-    delete_lastNode();
+    reverse(first);
 
-    display(first);
-
+    display (first);
 
     return 0;
 }

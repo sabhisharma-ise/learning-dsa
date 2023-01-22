@@ -1,7 +1,6 @@
-// Deleting the last node of a given linked list
-// We need 2 extra pointers (say p and q)
-// Pointer 'q' to point at the previous node of last node
-// Pointer 'p' to point to the last node
+// Reversing the Links
+// Reversing a linked list using sliding pointer
+// Better Approach to reverse a linked list
 
 #include <iostream>
 using namespace std;
@@ -37,21 +36,18 @@ void display (struct Node *p) {
     }
 }
 
-// Function to delete the last node of a linked list
-void delete_lastNode () {
-
-    struct Node *p = first;
+// Function to reverse a linked list using sliding pointer (Reversing the links)
+void reverse (struct Node *p) {
+    p = first;
     struct Node *q = NULL;
-
-    while (p->next != NULL) {
-        q = p;
-        p = p->next;
+    struct Node *r = NULL;
+    while (p != NULL) {
+        r = q;  // Bring r on q
+        q = p;  // Bring q on p
+        p = p->next;    // Move p to next node
+        q->next = r;    // Link q to r(behind q)
     }
-
-    q->next = NULL;
-    int x = p->data;
-    delete p;
-
+    first = q;  // Point first to q
 }
 
 int main () {
@@ -59,10 +55,9 @@ int main () {
     int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
     create(a, 8);
 
-    delete_lastNode();
+    reverse(first);
 
-    display(first);
-
+    display (first);
 
     return 0;
 }
