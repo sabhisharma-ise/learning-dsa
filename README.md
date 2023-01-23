@@ -12,4 +12,4 @@
 - Day 8 - ```Checking if a linked list is sorted, Remove duplicates from a sorted linked list```
 - Day 9, 10, 11 - ```NA```
 - Day 12 - ```Reversing a linked list - using array (reversing elements), using sliding pointers (reversing links), using recursion, Concatenation of 2 linked list, Merging of 2 sorted linked list, Check for Loop, C++ Class for Linked List```
-- Day 13 - ```Circular linked list - Display, Inserting, Deleting```
+- Day 13 - ```Circular linked list - Display a circular linked list, Inserting in a circular linked list, Deleting from the circular linked list```
