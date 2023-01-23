@@ -12,7 +12,7 @@ int Delete (int pos) {
 
     struct Node *p, *q;
 
-    // delete the first node
+    // deleting the first node
     if (pos == 1) {
         p = first;
         first = first -> next;

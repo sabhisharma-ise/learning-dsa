@@ -68,10 +68,10 @@ void insert_sorted (struct Node *p, int x) {
 
 int main () {
 
-    int a[] = {3, 5, 7, 10, 25, 8, 32, 2};
-    create(a, 8);
+    int a[] = {3, 5, 7, 10, 25};
+    create(a, 5);
 
-    insert_sorted(first, 12);
+    insert_sorted(first, 32);
 
     display(first);
 
