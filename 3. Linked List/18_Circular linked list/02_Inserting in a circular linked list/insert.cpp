@@ -58,7 +58,7 @@ void insert (struct Node *p, int pos, int x) {
             head = t;
             head->next = head;
         } else {
-            while (p->next != NULL) {
+            while (p->next != head) {
                 p = p->next;
             }
             p->next = t;
@@ -84,7 +84,7 @@ int main () {
     int A[] = {2, 3, 4, 5, 6};
     create(A, 5);
 
-    insert(head, 3, 10);
+    insert(head, 0, 10);
 
     display(head);
 
