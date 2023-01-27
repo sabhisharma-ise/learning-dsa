@@ -14,3 +14,5 @@
 - Day 12 - ```Reversing a linked list - using array (reversing elements), using sliding pointers (reversing links), using recursion, Concatenation of 2 linked list, Merging of 2 sorted linked list, Check for Loop, C++ Class for Linked List```
 - Day 13 - ```Circular linked list - Display a circular linked list, Inserting in a circular linked list, Deletion from a circular linked list```
 - Day 14 - ```Doubly linked list - Display & length function, Insertion in a doubly linked list, Deletion from a doubly linked list```
+- Day 15, 16 - ```NA```
+- Day 17 - ```Circular Doubly Linked List - Display & length function, Insertion & Deletion```
