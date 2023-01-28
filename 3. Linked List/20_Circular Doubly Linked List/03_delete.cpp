@@ -76,6 +76,7 @@ int length (struct Node *p) {
     return l;
 }
 
+// Works but printing infinite loop!
 int Delete (struct Node *head, int pos) {
 
     struct Node *p = head;

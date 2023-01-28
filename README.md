@@ -16,3 +16,4 @@
 - Day 14 - ```Doubly linked list - Display & length function, Insertion in a doubly linked list, Deletion from a doubly linked list```
 - Day 15, 16 - ```NA```
 - Day 17 - ```Circular Doubly Linked List - Display & length function, Insertion & Deletion```
+- Day 18 - ```Challenges - Finding middle element of a linked list, Finding intersection point of 2 linked lists```
