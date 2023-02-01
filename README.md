@@ -18,7 +18,7 @@
 - Day 15, 16 - ```Solved GeeksforGeeks Problems```
 - Day 17 - ```Circular Doubly Linked List - Display & length function, Insertion & Deletion```
 - Day 18 - ```Challenges - Finding middle element of a linked list, Finding intersection point of 2 linked lists```
-- Day 19 - ``` ```
+- Day 19 - ```Busy (Conducted an event at discord) ```
 - [ ] **Stack**
 - Day 20 - ```Implementing stack as an array```
 - Day 21 - ```Procrastination```
