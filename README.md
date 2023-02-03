@@ -22,4 +22,6 @@
 - [ ] **Stack**
 - Day 20 - ```Implementing stack as an array```
 - Day 21 - ```Procrastination```
-- Day 22 - ```Made a Quiz game using HTML, CSS, and JS (Internship)```
+- Day 22 & 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS (Internship)```
+- Day 24 - ```Create, display, push, pop, peek, isFull, isEmpty, stackTop functions implemented in Stack using array & using Linked List``` 
+- Day 25 - ```
