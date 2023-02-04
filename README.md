@@ -24,4 +24,5 @@
 - Day 21 - ```Procrastination```
 - Day 22 & 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS (Internship)```
 - Day 24 - ```Create, display, push, pop, peek, isFull, isEmpty, stackTop functions implemented in Stack using array & using Linked List``` 
-- Day 25 - ```
+- Day 25 - ```Paranthesis Matching using Stack```
+- Day 26 - ```
