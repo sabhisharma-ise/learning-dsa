@@ -3,7 +3,6 @@
 // exp = {([a+b]*[c-d])/e}
 
 #include <iostream>
-#include <string.h>
 using namespace std;
 
 struct stack {
@@ -57,29 +56,40 @@ int isEmpty (struct stack st) {
     }
 }
 
-int isBalanced (char *exp) {
+int isMatchingPair(char character1, char character2) {
+
+    if (character1 == '(' && character2 == ')') 
+        return 1;
+    else if (character1 == '{' && character2 == '}')    
+        return 1;
+    else if (character1 == '[' && character2 == ']')
+        return 1;
+    else
+        return 0;
+}
+
+int isBalanced (string exp) {
 
     struct stack st;
-    st.size = strlen(exp);
+    st.size = exp.length();
     st.top = -1;
     st.s = new char[st.size];
 
     // main code
-    for (int i = 0; exp[i] != '\0'; i++) {
+    for (int i = 0; i < exp.length(); i++) {
         if (exp[i] == '{' || exp[i] == '(' || exp[i] == '[') {
             push(&st, exp[i]);
         }
         else if (exp[i] == '}' || exp[i] == ')' || exp[i] == ']') {
 
-            int x = pop(&st);
             // Check if stack is already empty
             if (isEmpty(st)) {
                 return false;
             }
             // if the popped character is the matching starting bracket then fine
-            // else if (!(int(exp[i]) - int(x) == 1 || int(exp[i]) - int(x) == 2 || int(exp[i]) - int(x) == 3)) {    // ASCII 40 ( , 41 ) , 91 [ , 93 ] , 123 { , 125 }
-            //     return false;
-            // }
+            else if (!isMatchingPair(pop(&st), exp[i])) {
+                return false;
+            }
             
         }
     }
@@ -90,7 +100,7 @@ int isBalanced (char *exp) {
 
 int main () {
 
-    char *exp = "{([a+b]*[c-d])/e}";
+    string exp = "{()}[]";
 
     cout << isBalanced(exp);
 

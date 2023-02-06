@@ -12,7 +12,7 @@ struct stack {
 };
 
 // Function to push an element into the stack
-void push (struct stack *st, int x) {      // We'll be modifying the stack, so call by reference is required
+void push (struct stack *st, char x) {      // We'll be modifying the stack, so call by reference is required
 
     // Check if stack is already full
     if (st->top == (st->size - 1)) printf("Stack overflow\n");
@@ -23,7 +23,7 @@ void push (struct stack *st, int x) {      // We'll be modifying the stack, so c
 }
 
 // Function to pop an element from the stack
-int pop (struct stack *st) {
+char pop (struct stack *st) {
 
     int x = -1;
     // Check if stack is empty
@@ -56,7 +56,7 @@ int isEmpty (struct stack st) {
     }
 }
 
-int isBalanced (char *exp) {
+bool isBalanced (const char *exp) {
 
     struct stack st;
     st.size = strlen(exp);
@@ -86,7 +86,7 @@ int main () {
 
     // char exp[] = {'(', '(', 'a', '+', 'b', ')', '*', '(', 'c', '-', 'd', ')'};
 
-    char *exp = "((a+b)*(c-d))";
+    const char *exp = "((a+b)*(c-d))";
 
     cout << isBalanced(exp);
 
