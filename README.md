@@ -25,6 +25,7 @@
 - Day 22 & 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS (Internship)```
 - Day 24 - ```Create, display, push, pop, peek, isFull, isEmpty, stackTop functions implemented in Stack using array & using Linked List``` 
 - Day 25 - ```Paranthesis Matching using Stack```
-- Day 26 - ```Infix to Postfix conversion, Associativity and Unary Operators```
-- Day 27 - ```Infix to Postfix using Stack Method```
-- Day 28 - 
+- Day 26 - ```Conversion of infix to postfix, Associativity and Unary Operators```
+- Day 27 - ```Infix to Postfix using Stack Method (Basic)```
+- Day 28 - ```Infix to Postfix using Stack Method (Expression containing Round Brackets)```
+- Day 29 - ```
