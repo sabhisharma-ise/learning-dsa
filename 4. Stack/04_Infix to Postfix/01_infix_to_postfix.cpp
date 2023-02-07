@@ -3,7 +3,6 @@
 // Infix Expression = a+b*c-d/e, It's Postfix equivalent: abc*+de/-
 
 #include <iostream>
-#include <stdlib.h>
 #include <string.h>
 // using namespace std;
 
@@ -86,7 +85,7 @@ int pre (char x) {
 }
 
 // Function for converting Infix to Postfix expression
-char *convert(char * infix) {
+char *convert(const char * infix) {
 
     // struct stack st;    
     // create(&st);
@@ -121,7 +120,7 @@ char *convert(char * infix) {
 
 int main () {
 
-    char * infix = "a+b*c-d/e";
+    const char * infix = "a+b*c-d/e";
     push('#');  // Important to have a intial element in the stack
 
     char * postfix = convert(infix);
