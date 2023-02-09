@@ -19,7 +19,7 @@
 - Day 17 - ```Circular Doubly Linked List - Display & length function, Insertion & Deletion```
 - Day 18 - ```Challenges - Finding middle element of a linked list, Finding intersection point of 2 linked lists```
 - Day 19 - ```Busy (Conducted an event at discord) ```
-- [ ] **Stack**
+- [X] **Stack**
 - Day 20 - ```Implementing stack as an array```
 - Day 21 - ```Procrastination```
 - Day 22 & 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS (Internship)```
@@ -29,3 +29,5 @@
 - Day 27 - ```Infix to Postfix using Stack Method (Basic)```
 - Day 28 - ```Infix to Postfix using Stack Method (Expression containing Round Brackets)```
 - Day 29 - ```Evaluation of Postfix Expression```
+- [ ] **Queue**
+- Day 30 - ```Implementing Queue using Array - with two pointers (front and rear)```
