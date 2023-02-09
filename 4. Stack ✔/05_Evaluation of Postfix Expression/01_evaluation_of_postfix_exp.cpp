@@ -18,12 +18,14 @@ int isOperand (char x) {
     int evaluatePostfix(string S)
     {
         // Your code here
+        // Using Stack STL in C++
         stack<int> st;
 
         for (int i = 0; i < S.length(); i++) {
             
             if (isOperand(S[i])) {
-                st.push(S[i] - '0');
+                st.push(S[i] - '0');    // Postfix expression is in the form of string (set of characters)
+                                        // We have to convert S[i] to int (S[i] - '0' gives the int value)
             }
             
             else {
