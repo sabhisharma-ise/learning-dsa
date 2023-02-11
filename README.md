@@ -32,3 +32,5 @@
 - [ ] **Queue**
 - Day 30 - ```Implementing Queue using Array - with two pointers (front and rear)```
 - Day 31 - ```C++ Class for implementation of Queue using Array, Circular Queue```
+- Day 32 - ```Queue using Linked List, Double Ended Queue (DEQUEUE)```
+- Day 33 - 
