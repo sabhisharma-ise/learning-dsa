@@ -1,5 +1,3 @@
-//test
-
 // Reversing a queue using an array and in-built queueu STL
 
 #include <iostream>
