@@ -34,3 +34,4 @@
 - Day 31 - ```C++ Class for implementation of Queue using Array, Circular Queue```
 - Day 32 - ```Queue using Linked List, Double Ended Queue (DEQUEUE)```
 - Day 33 - ```Priority Queues, Queue using 2 Stacks, Queue Reversal, and Solved GFG Problems```
+- Day 34 - ```Rotate the elements of Queue by 'K' steps, and Solved GFG Problems```
