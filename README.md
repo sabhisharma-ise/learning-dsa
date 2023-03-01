@@ -10,7 +10,7 @@
 - Day 6 - ```Insertion in a linked list, Create a linked list using insert```
 - Day 7 - ```Inserting in a sorted linked list, Deleting from a linked list```
 - Day 8 - ```Checking if a linked list is sorted, Remove duplicates from a sorted linked list```
-- Day 9, 10 - ```Busy at College (Due to Event Planning)```
+<!--   - Day 9, 10 - ```Busy at College (Due to Event Planning)```-->
 - Day 11 - ```Solved GeeksforGeeks Problems```
 - Day 12 - ```Reversing a linked list - using array (reversing elements), using sliding pointers (reversing links), using recursion, Concatenation of 2 linked list, Merging of 2 sorted linked list, Check for Loop, C++ Class for Linked List```
 - Day 13 - ```Circular linked list - Display a circular linked list, Inserting in a circular linked list, Deletion from a circular linked list```
@@ -18,11 +18,11 @@
 - Day 15, 16 - ```Solved GeeksforGeeks Problems```
 - Day 17 - ```Circular Doubly Linked List - Display & length function, Insertion & Deletion```
 - Day 18 - ```Challenges - Finding middle element of a linked list, Finding intersection point of 2 linked lists```
-- Day 19 - ```Busy (Conducted an event at discord) ```
+<!--   - Day 19 - ```Busy (Conducted an event at discord) ```-->
 - [X] **Stack**
 - Day 20 - ```Implementing stack as an array```
-- Day 21 - ```Procrastination```
-- Day 22 & 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS (Internship)```
+<!--   - Day 21 - ```Procrastination```-->
+<!--   - Day 22 & 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS (Internship)```-->
 - Day 24 - ```Create, display, push, pop, peek, isFull, isEmpty, stackTop functions implemented in Stack using array & using Linked List``` 
 - Day 25 - ```Paranthesis Matching using Stack```
 - Day 26 - ```Conversion of infix to postfix, Associativity and Unary Operators```
@@ -35,7 +35,9 @@
 - Day 32 - ```Queue using Linked List, Double Ended Queue (DEQUEUE)```
 - Day 33 - ```Priority Queues, Queue using 2 Stacks, Queue Reversal, and Solved GFG Problems```
 - Day 34 - ```Rotate the elements of Queue by 'K' steps, and Solved GFG Problems```
+<!--   ```10 Days Break (felt sick)```-->
 - [ ] **Trees**
 - Day 44 - ```Basic terminology, Binary Trees, Height and Nodes relationship in a binary tree, Internal & External nodes relationship in a binary tree, Strict Binary Tree```
+<!--   ```4 Days Break (college assignments, etc)```-->
 - Day 49 - ```n-ary Trees```
 - Day 50 - ```Representation of binary tree - Array Representation and Linked Representation, Tree Traversals and 3 easy traversal methods```
