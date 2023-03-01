@@ -36,6 +36,6 @@
 - Day 33 - ```Priority Queues, Queue using 2 Stacks, Queue Reversal, and Solved GFG Problems```
 - Day 34 - ```Rotate the elements of Queue by 'K' steps, and Solved GFG Problems```
 - [ ] **Trees**
-- Day 44 - ```Basic terminology, Binary Trees, Height and Nodes relationship in a binary tree, Internal & External nodes relationship in a binary tree, Strict Binary Tree
+- Day 44 - ```Basic terminology, Binary Trees, Height and Nodes relationship in a binary tree, Internal & External nodes relationship in a binary tree, Strict Binary Tree```
 - Day 49 - ```n-ary Trees```
 - Day 50 - ```Representation of binary tree - Array Representation and Linked Representation, Tree Traversals and 3 easy methods for traversal```
