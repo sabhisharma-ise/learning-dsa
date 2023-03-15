@@ -1,0 +1,11 @@
+# Learning DSA in C/C++
+- Covers most of the data structures and algorithms
+- Requires Dedication and Hard Work!
+
+# Topics Covered So Far in the Repository
+- Essential C/C++ Concepts
+- Linked List
+- Stack
+- Queues
+- Binary Tree
+- Binary Search
