@@ -22,7 +22,7 @@
 - [X] **Stack**
 - Day 20 - ```Implementing stack as an array```
 - Day 21 - ```Procrastination```
-- Day 22 & 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS```
+- Day 22, 23 - ```Made a Quiz game + Weather app using HTML, CSS, and JS```
 - Day 24 - ```Create, display, push, pop, peek, isFull, isEmpty, stackTop functions implemented in Stack using array & using Linked List``` 
 - Day 25 - ```Paranthesis Matching using Stack```
 - Day 26 - ```Conversion of infix to postfix, Associativity and Unary Operators```
@@ -35,14 +35,14 @@
 - Day 32 - ```Queue using Linked List, Double Ended Queue (DEQUEUE)```
 - Day 33 - ```Priority Queues, Queue using 2 Stacks, Queue Reversal, and Solved GFG Problems```
 - Day 34 - ```Rotate the elements of Queue by 'K' steps, and Solved GFG Problems```
-```10 Days Break (Not Feeling Well)```
+- ```10 Days Break (Not Feeling Well)```
 - [X] **Binary Tree**
 - Day 44 - ```Basic terminology, Binary Trees, Height and Nodes relationship in a binary tree, Internal & External nodes relationship in a binary tree, Strict Binary Tree```
-```4 Days Break (College Assignments)```
+- ```4 Days Break (College Assignments)```
 - Day 49 - ```n-ary Trees```
 - Day 50 - ```Representation of binary tree - Array Representation and Linked Representation, Tree Traversals and 3 easy traversal methods```
 - Day 51 - ```Creating a Binary Tree using Queue STL, Recursive function for Tree Traversals```
-```3 Days Break (Internal Exams in College)```
+- ```3 Days Break (Internal Exams in College)```
 - Day 55 - ```Iterative Preorder & Inorder Traversal, Level Traversal```
 - Day 56 - ```Generating Tree from Traversals - Given Traversals: 1. Preorder & Inorder, 2. Postorder & Inorder, Counting Nodes, Height of a Binary Tree```
 - [ ] **Binary Search Tree**
