@@ -10,8 +10,38 @@ struct Node {
 } *root = NULL;
 
 // Function to Create a BST
-void create () {
-    
+void create (int key) {
+    struct Node *t = root;
+    struct Node *r = NULL;
+
+    struct Node *p = (struct Node *)malloc(sizeof(struct Node));
+
+    // Insertion in empty BST
+    if (root == NULL) {
+        p->data = key;
+        p->lchild = p->rchild = NULL;
+        root = p;
+        return;    
+    }
+
+    while (t) {
+        r = t;
+        if (key == t->data) {
+            return;
+        }
+        else if (key < t->data) {
+            t = t->lchild;
+        }
+        else {
+            t = t->rchild;
+        }
+    }
+
+    p->data = key;
+    p->lchild = p->rchild = NULL;
+
+    if (key < r->data) r->lchild = p;
+    else r->rchild = p;
 }
 
 // Height of a Sub-Tree
@@ -67,17 +97,50 @@ struct Node *Delete (struct Node *p, int key) {
     return p;
 }
 
+// Tree Traversals
+void pre_order (struct Node *p) {
+    if (p) {
+        printf("%d ", p->data);
+        pre_order (p->lchild);
+        pre_order (p->rchild);
+    }
+}
+
+void in_order (struct Node *p) {
+    if (p) {
+        pre_order (p->lchild);
+        printf("%d ", p->data);
+        pre_order (p->rchild);
+    }
+}
+
+void post_order (struct Node *p) {
+    if (p) {
+        pre_order (p->lchild);
+        pre_order (p->rchild);
+        printf("%d ", p->data);
+    }
+}
 
 int main () {
 
-    create ();
+    create(1);
+    create(4);
+    create(6);
+    create(2);
+    create(3);
+
+    cout << "Inorder Traversal Before Deletion: ";
+    in_order(root); cout << "\n";
 
     int key;
     cout << "Enter the key to be deleted: " << "\n";
     cin >> key;
 
-    Delete (root, key);
+    root = Delete (root, key);
 
+    cout << "Inorder Traversal Before Deletion: ";
+    in_order(root);
 
     return 0;
 }
