@@ -1,6 +1,6 @@
-// Converting a given infix expression into a postfix expression (Without Parenthesis)
+// Converting a given infix expression into a prefix expression (Without Parenthesis)
 // Using Stack Method
-// Infix Expression = a+b*c-d/e, It's Postfix equivalent: abc*+de/-
+// Infix Expression = a+b*c-d/e, It's Prefix equivalent: -+a*bc/de
 
 #include <iostream>
 #include <string.h>
@@ -85,10 +85,7 @@ int pre (char x) {
 }
 
 // Function for converting Infix to Postfix expression
-char *convert(const char * infix) {
-
-    // struct stack st;    
-    // create(&st);
+char *convert(char * infix) {
 
     char *postfix = new char[strlen(infix) + 1]; // In C++
     // char *postfix = (char *) malloc (sizeof(char) * strlen(infix) + 1);  // Creates a string in heap memory
@@ -102,7 +99,7 @@ char *convert(const char * infix) {
         }
         else {
 
-                if (isEmpty() || pre(infix[i]) > pre(stackTop()))   // if stack is empty, then push the operator in the stack (Using this, we don't need '#' initially in the stack)
+                if (isEmpty() || pre(infix[i]) >= pre(stackTop()))   // if stack is empty, then push the operator in the stack (Using this, we don't need '#' initially in the stack)
                         push(infix[i++]);
                 else 
                     postfix[j++] = pop();
@@ -118,15 +115,37 @@ char *convert(const char * infix) {
     return postfix;
 }
 
+// Function to reverse the infix expression
+void reverse (char *infix) {
+    int size = strlen(infix);
+    int j = size;
+    int i = 0;
+    char temp[size];
+
+    temp[j--] = '\0';
+    while (infix[i] != '\0') {
+        temp[j] = infix[i];
+        j--;
+        i++;
+    }
+    strcpy (infix, temp);
+} 
+
+
 int main () {
 
-    const char infix[] = "a+b*c-d/e";
-    // push('#');  // Important to have a intial element in the stack
+    char infix[] = "a+b*c-d/e";
 
-    char * postfix = convert(infix);
+    // Reverse the infix expression
+    reverse (infix);
 
-    // postfix[strlen(infix)] = '\0';  // Replacing '#' with NULL Character
-    printf("Postix Expression: %s", postfix);
+    // Obtain the postfix expression
+    char * prefix = convert(infix);
+
+    // Reverse the postfix expression
+    reverse (prefix);
+
+    printf("Prefix Expression: %s", prefix);
     
     return 0;
 }
