@@ -3,6 +3,7 @@
 // exp = {([a+b]*[c-d])/e}
 
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 struct stack {
@@ -12,7 +13,7 @@ struct stack {
 };
 
 // Function to push an element into the stack
-void push (struct stack *st, int x) {      // We'll be modifying the stack, so call by reference is required
+void push (struct stack *st, char x) {      // We'll be modifying the stack, so call by reference is required
 
     // Check if stack is already full
     if (st->top == (st->size - 1)) printf("Stack overflow\n");
@@ -68,15 +69,15 @@ int isMatchingPair(char character1, char character2) {
         return 0;
 }
 
-int isBalanced (string exp) {
+int isBalanced (char *exp) {
 
     struct stack st;
-    st.size = exp.length();
+    st.size = strlen(exp);
     st.top = -1;
     st.s = new char[st.size];
 
     // main code
-    for (int i = 0; i < exp.length(); i++) {
+    for (int i = 0; exp[i] != '\0'; i++) {
         if (exp[i] == '{' || exp[i] == '(' || exp[i] == '[') {
             push(&st, exp[i]);
         }
@@ -86,7 +87,7 @@ int isBalanced (string exp) {
             if (isEmpty(st)) {
                 return false;
             }
-            // if the popped character is the matching starting bracket then fine
+            // if the popped character is the matching with the closing bracket then fine
             else if (!isMatchingPair(pop(&st), exp[i])) {
                 return false;
             }
@@ -100,7 +101,7 @@ int isBalanced (string exp) {
 
 int main () {
 
-    string exp = "{()}[]";
+    char *exp = "{([a+b]+[c-d])/e}";
 
     cout << isBalanced(exp);
 
