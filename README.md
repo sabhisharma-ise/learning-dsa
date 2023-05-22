@@ -45,5 +45,5 @@
 - ```3 Days Break (Internal Exams in College)```
 - Day 55 - ```Iterative Preorder & Inorder Traversal, Level Traversal```
 - Day 56 - ```Generating Tree from Traversals - Given Traversals: 1. Preorder & Inorder, 2. Postorder & Inorder, Counting Nodes, Height of a Binary Tree```
-- [ ] **Binary Search Tree**
+- [X] **Binary Search Tree**
 - Day 56 - ```Properties of BST, Searching, Inserting, and Deleting from BST``` 
